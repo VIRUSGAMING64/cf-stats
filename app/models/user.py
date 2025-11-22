@@ -18,6 +18,9 @@ class User:
     accepted: int = 0
     wrong_ans: int = 0
     tle: int = 0
+    runtime_error: int = 0
+    memory_limit: int = 0
+    compilation_error: int = 0
     contributions: int = 0
     registration_unix_time: int = 0
 
@@ -73,6 +76,14 @@ class User:
         """Provides a sliced name if the full name is too long."""
         string_handler = StringSlicer()
         return string_handler.slice(self.name)
+
+    @property
+    def acceptance_rate(self):
+        """Calculate the acceptance rate (AC/Total Submissions) as percentage."""
+        if self.submissions == 0:
+            return "0.0"
+        rate = (self.accepted / self.submissions) * 100
+        return f"{rate:.1f}"
 
     def __str__(self):
         """Returns the string rep of the class."""

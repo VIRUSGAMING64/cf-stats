@@ -40,6 +40,9 @@ class CFResponseParser:
         user.accepted = freq['OK']
         user.wrong_ans = freq['WRONG_ANSWER']
         user.tle = freq['TIME_LIMIT_EXCEEDED']
+        user.runtime_error = freq['RUNTIME_ERROR']
+        user.memory_limit = freq['MEMORY_LIMIT_EXCEEDED']
+        user.compilation_error = freq['COMPILATION_ERROR']
 
     @classmethod
     def _parse_rating_changes(cls, rating_changes):
