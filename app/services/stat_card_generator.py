@@ -41,4 +41,8 @@ class CardGenerator(IGenerator, FileHelper):
         output = re.sub('{{ contributions }}', str(user.contributions), output)
         output = re.sub('{{ submissions }}', str(user.submissions), output)
         output = re.sub('{{ tle }}', str(user.tle), output)
+        output = re.sub('{{ runtime_error }}', str(user.runtime_error), output)
+        output = re.sub('{{ memory_limit }}', str(user.memory_limit), output)
+        output = re.sub('{{ compilation_error }}', str(user.compilation_error), output)
+        output = re.sub('{{ acceptance_rate }}', str(user.acceptance_rate), output)
         return output
