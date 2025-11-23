@@ -51,6 +51,11 @@
       padding: 0.25em;
       font-size: 12px;
       vertical-align: top;
+      color: rgb(31, 35, 40);
+    }
+
+    #gh-dark-mode-only:target td {
+      color: #c9d1d9;
     }
 
     .stat-value {
@@ -134,12 +139,12 @@
                     <rect y="6" width="8" height="18.125" rx="2" fill="#FFC107" />
                     <rect x="24" y="10.125" width="8" height="14" rx="2" fill="#F44336" />
                     <rect x="12" width="8" height="24.125" rx="2" fill="#2196F3" />
-                  </svg> {{ name }}'s CodeForces Stats
+                  </svg> {{ handle }}'s CodeForces Stats
                 </th>
               </tr>
               <tr class="header-info">
                 <td colspan="2" style="padding-bottom: 12px; padding-top: 4px;">
-                  {{ organization }} | <span style="color: {{ rating_color }}; font-weight: 600;">{{ rating }} </span> (max: <span style="color: {{ max_rating_color }}; font-weight: 600;">{{ max }}</span>) | Member for {{ year }} years
+                  {{ name }} | {{ organization }} | <span style="color: {{ rating_color }}; font-weight: 600;">{{ rating }} </span> (max: <span style="color: {{ max_rating_color }}; font-weight: 600;">{{ max }}</span>) | Member for {{ year }} years
                 </td>
               </tr>
             </thead>

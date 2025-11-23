@@ -8,6 +8,7 @@ from app.utils.string_utils import Acronym, StringSlicer
 class User:
     """Singleton user model."""
     name: str = ''
+    handle: str = ''
     organization: str = ''
     rating: int = 0
     rank: str = 'newbie'
