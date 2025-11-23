@@ -24,8 +24,9 @@ class CardGenerator(IGenerator, FileHelper):
             output = f.read()
 
         output = re.sub('{{ name }}', user.sliced_name, output)
+        output = re.sub('{{ handle }}', user.handle, output)
         if not user.org_acronym:
-            output = re.sub(r'{{ organization }} \|', user.org_acronym, output)
+            output = re.sub(r'{{ organization }} \| ', '', output)
         else:
             output = re.sub('{{ organization }}', user.org_acronym, output)
         output = re.sub('{{ rating }}', user.rank, output)

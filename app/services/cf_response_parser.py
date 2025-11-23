@@ -20,6 +20,7 @@ class CFResponseParser:
         """Parse and sets user's basic profile."""
         user = User()
         user.name = user_info.get('firstName', '') + ' ' + user_info.get('lastName', '')
+        user.handle = user_info.get('handle', '')
         user.organization = user_info.get('organization', '')
         user.rating = user_info.get('rating', 0)
         user.rank = user_info.get('rank', 'newbie')
