@@ -1,7 +1,5 @@
 import re
 
-import pybadges
-
 from app.constant import Constant
 from app.models.user import User
 from app.services.generator_interface import IGenerator
