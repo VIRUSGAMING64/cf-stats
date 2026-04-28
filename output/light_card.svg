@@ -196,7 +196,7 @@
                     <path d="M8.646 6.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 9 8.646 7.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 9l1.647-1.646a.5.5 0 0 0 0-.708z"/>
                   </svg>Total Submissions
                 </td>
-                <td class="stat-value">1720</td>
+                <td class="stat-value">1722</td>
               </tr>
               <tr style="animation-delay: 225ms">
                 <td>
@@ -213,7 +213,7 @@
                     <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z" />
                   </svg>Accepted Solutions
                 </td>
-                <td class="stat-value">820</td>
+                <td class="stat-value">821</td>
               </tr>
               <tr style="animation-delay: 300ms">
                 <td>
@@ -221,7 +221,7 @@
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                   </svg>Wrong Answers
                 </td>
-                <td class="stat-value">629</td>
+                <td class="stat-value">630</td>
               </tr>
               <tr style="animation-delay: 350ms">
                 <td>
